@@ -2,12 +2,12 @@ import Link from "next/link";
 import React from "react";
 
 const navbarArray = [
-  "Главная",
-  "Каталог",
-  "О нас",
-  "Контакты",
-  "Доставка и оплата",
-  "Статьи",
+  { name: "Главная", path: "/" },
+  { name: "Каталог", path: "/catalogs" },
+  { name: "О нас", path: "/about" },
+  { name: "Контакты", path: "/contacts" },
+  { name: "Доставка и оплата", path: "/delivery" },
+  { name: "Статьи", path: "/articles" },
 ];
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -19,7 +19,7 @@ export default function NavbarSection() {
         {navbarArray.map((el) => (
           <Link
             key={el.id}
-            href="/#"
+            href={el.path}
             className={classNames(
               el.current
                 ? "bg-green-900 text-green bold "
@@ -27,7 +27,7 @@ export default function NavbarSection() {
               "rounded-md px-3 py-2"
             )}
           >
-            {el}
+            {el.name}
           </Link>
         ))}
       </div>

@@ -33,13 +33,13 @@ export default function Header() {
           />
         </div>
         <div className="flex px-5">
-          <Link className="hover:bg-green" href="/">
+          <Link className="hover:bg-green" href="https://wa.me/+996500370002">
             <Image src={logoImage} alt="what'sapp" />
           </Link>
-          <Link className="hover:bg-green" href="/">
+          <Link className="hover:bg-green" href="https://wa.me/+996500370002">
             <Image src={logoImage} alt="what'sapp" />
           </Link>
-          <Link className="hover:bg-green" href="/">
+          <Link className="hover:bg-green" href="https://wa.me/+996500370002">
             <Image src={logoImage} alt="what'sapp" />
           </Link>
         </div>

@@ -4,6 +4,8 @@ import Footer from "../components/footer/Footer";
 import Header from "@/components/header/Header";
 import Promosale from "@/components/header/promoSale/Promosale";
 import NavbarSection from "@/components/header/navbar/CustomNavbar";
+import WhatsAppComponent from "@/components/whatsapp/WhatsAppComponent";
+import WhatsAppComponent2 from "@/components/whatsapp/WhatsAppComponent2";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +21,7 @@ export default function RootLayout({ children }) {
         <Promosale />
         <Header />
         <NavbarSection />
+        <WhatsAppComponent2 />
         {children}
         <Footer />
       </body>

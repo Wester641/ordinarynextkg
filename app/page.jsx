@@ -12,12 +12,14 @@ import DescEnd from "../components/descriptions/DescEnd";
 import Portfolio from "../components/promoSection/PortfolioComponent";
 import PromoSection from "../components/promoSection/PromoSection";
 import ProductsCardsCustom from "../components/productsCards/ProductCardsCustom";
+import WhatsAppComponent from "@/components/whatsapp/WhatsAppComponent";
 
 const Home = () => {
   return (
     <div className="">
       <SimpleSlider />
       <PromoSection />
+      <WhatsAppComponent />
       <ProductsCardsCustom />
       <PromoBanner />
       <PromoSection2 />
