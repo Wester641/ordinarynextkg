@@ -10,15 +10,15 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between border-b border-[#d9d9d9] py-4 relative  ">
-      <div className="flex items-center justify-between   w-full ">
+    <div className="flex bg-neutral-800 sm:bg-[#fff] items-center justify-between border-b border-[#d9d9d9] py-2 ss:py-4 relative  ">
+      <div className="flex items-center justify-between w-full ">
         <div
-          className="HAMBURGER-ICON space-y-1 sm:space-y-2 bg-green py-3  pr-4 pl-3 rounded-r-3xl hover:bg-dark-green "
+          className="HAMBURGER-ICON space-y-1 sm:space-y-2 bg-green py-3  pr-4 pl-2 rounded-r-3xl hover:bg-dark-green "
           onClick={() => setIsNavOpen((prev) => !prev)}
         >
-          <span className="block h-[2px] sm:h-0.5 w-4 sm:w-8 animate-pulse bg-[#fff]"></span>
-          <span className="block h-[2px] sm:h-0.5 w-4 sm:w-8 animate-pulse bg-[#fff]"></span>
-          <span className="block h-[2px] sm:h-0.5 w-4 sm:w-8 animate-pulse bg-[#fff]"></span>
+          <span className="block h-[2px] rounded sm:h-[3px] w-4 sm:w-8  bg-[#fff]"></span>
+          <span className="block h-[2px] rounded sm:h-[3px] w-4 sm:w-8  bg-[#fff]"></span>
+          <span className="block h-[2px] rounded sm:h-[3px] w-4 sm:w-8  bg-[#fff]"></span>
         </div>
         <div className="hidden sm:block text-black ">
           <h3>
@@ -32,15 +32,24 @@ export default function Header() {
             placeholder="Поиск по сайту"
           />
         </div>
-        <div className="flex px-5">
-          <Link className="hover:bg-green" href="https://wa.me/+996500370002">
-            <Image src={logoImage} alt="what'sapp" />
+        <div className="flex px-5 ">
+          <Link
+            className="hover:bg-green h-9"
+            href="https://wa.me/+996500370002"
+          >
+            <Image src={logoImage} width={35} height={35} alt="what'sapp" />
           </Link>
-          <Link className="hover:bg-green" href="https://wa.me/+996500370002">
-            <Image src={logoImage} alt="what'sapp" />
+          <Link
+            className="hover:bg-green h-9"
+            href="https://wa.me/+996500370002"
+          >
+            <Image src={logoImage} width={35} height={35} alt="what'sapp" />
           </Link>
-          <Link className="hover:bg-green" href="https://wa.me/+996500370002">
-            <Image src={logoImage} alt="what'sapp" />
+          <Link
+            className="hover:bg-green h-9"
+            href="https://wa.me/+996500370002"
+          >
+            <Image src={logoImage} width={35} height={35} alt="what'sapp" />
           </Link>
         </div>
       </div>
