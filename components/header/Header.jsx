@@ -10,7 +10,7 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex bg-neutral-800 sm:bg-[#fff] items-center justify-between border-b border-[#d9d9d9] py-2 ss:py-4 relative  ">
+    <div className="flex bg-neutral-800 sm:bg-[#fff] items-center justify-between border-b border-[#d9d9d9] py-2 ss:py-4 relative transition-transform duration-300 ease-in-out ">
       <div className="flex items-center justify-between w-full ">
         <div
           className="HAMBURGER-ICON space-y-1 sm:space-y-2 bg-green py-3  pr-4 pl-2 rounded-r-3xl hover:bg-dark-green "
@@ -130,7 +130,7 @@ export default function Header() {
       <style>{`
         .hideMenuNav {
           display: none;
-          transition: 0.3, easy-in
+          transform: translateX(-100%);
         }
         .showMenuNav {
           display: block;
@@ -144,7 +144,7 @@ export default function Header() {
           flex-direction: column;
           justify-content: space-evenly;
           align-items: center;
-          transition: padding-right 0.01s ease 0s, background-color 0.5s ease 0s;
+          transform: translateX(0);
         }
         @media (min-width: 768px) {
           .showMenuNav {
