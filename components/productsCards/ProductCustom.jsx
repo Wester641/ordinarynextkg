@@ -14,8 +14,8 @@ export default function ProductCustom({ image, title, price, color }) {
           />
         </div>
       </div>
-      <div className="h-1/2">
-        <p className="flex flex-col h-full justify-between gap-1 text-[#4b4a4a] text-[11px] lg:text-base sm:text-[12px] py-1 px-1 ">
+      <div className="h-1/2 box-border">
+        <p className=" flex flex-col h-full justify-between gap-1 text-[#4b4a4a] text-[11px] lg:text-base sm:text-[12px] py-1 px-1 ">
           {title}
           <span className="block text-md lg:text-base xl:text-xl">
             {" "}
