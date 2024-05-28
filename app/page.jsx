@@ -13,6 +13,7 @@ import Portfolio from "../components/promoSection/PortfolioComponent";
 import PromoSection from "../components/promoSection/PromoSection";
 import ProductsCardsCustom from "../components/productsCards/ProductCardsCustom";
 import WhatsAppComponent from "@/components/whatsapp/WhatsAppComponent";
+import ProductCurrectData from "@/components/productsCards/ProductCurrectData";
 
 const Home = () => {
   return (
@@ -20,7 +21,8 @@ const Home = () => {
       <SimpleSlider />
       <PromoSection />
       <WhatsAppComponent />
-      <ProductsCardsCustom />
+      {/* <ProductsCardsCustom /> */}
+      <ProductCurrectData />
       <PromoBanner />
       <PromoSection2 />
       <Descriptions />
