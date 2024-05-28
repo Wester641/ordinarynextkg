@@ -24,9 +24,9 @@ export default function PromoSection() {
                 alt="img"
               />
             </Link>
-            <p className="bg-green text-[#fff] h-8 sm:h-12 sm:text-base text-xs absolute w-full bottom-5 text-center opacity-80 ">
-              {el.name}
-              <span className="block">{el.description}</span>
+            <p className="bg-green text-[#fff]  min-h-8 sm:py-2 sm:text-base text-xs md:text-xl absolute w-full bottom-5 text-center opacity-80 ">
+              {/* {el.name} */}
+              <span className="block ">{el.description}</span>
             </p>
           </div>
         ))}

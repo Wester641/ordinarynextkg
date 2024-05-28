@@ -3,8 +3,6 @@ import ProductCustom from "./ProductCustom";
 import { productsForBank } from "../../lib/constans/productsForBank";
 
 export default function ProductCurrectData() {
-  // let object = productsForBank[]
-
   return (
     <>
       <div className="">
