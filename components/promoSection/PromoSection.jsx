@@ -2,11 +2,11 @@ import Image from "next/image";
 import { callouts } from "../../lib/constans/promoSection";
 import Link from "next/link";
 
-export default function PromoSection() {
+export default function PromoSection({ title = "Группы товаров и услуг" }) {
   return (
     <section className="sm:m-7 mx-3">
       <h2 className="lg:text-3xl font-bold text-gray-900 text-center my-5 bg-green text-white ">
-        Группы товаров и услуг
+        {title}
       </h2>
       <div className="grid grid-cols-3 overflow-hidden place-items-center gap-3  ">
         {callouts.map((el) => (

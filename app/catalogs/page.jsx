@@ -1,14 +1,15 @@
+import ProductCurrectData from "@/components/productsCards/ProductCurrectData";
 import BreadCrumbs from "@/components/featers/breadCrumbs/BreadCrumbs";
 import ProductsCardsCustom from "@/components/productsCards/ProductCardsCustom";
 import PromoSection from "@/components/promoSection/PromoSection";
-import React from "react";
-
-export default function Catalogs() {
+const CatalogPage = () => {
   return (
-    <div className="text-center">
+    <div>
       <BreadCrumbs />
-      <PromoSection />
-      <ProductsCardsCustom />
+      <PromoSection title="Каталог" />
+      <ProductCurrectData />
     </div>
   );
-}
+};
+
+export default CatalogPage;

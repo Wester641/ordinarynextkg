@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { navigation, userNavigation } from "../../lib/constans/navigationData";
 import logoImage from "../../public/Img/icon/ContactsWhatsApp.svg";
+import logoPhone from "../../public/Img/icon/telephone-call.png";
+import logoCalendar from "../../public/Img/icon/schedule.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -32,24 +34,21 @@ export default function Header() {
             placeholder="Поиск по сайту"
           />
         </div>
-        <div className="flex px-5 ">
+        <div className="flex px-5 gap-5">
           <Link
-            className="hover:bg-green h-9"
+            className="hover:bg-salesgreen h-9 rounded"
             href="https://wa.me/+996500370002"
           >
-            <Image src={logoImage} width={35} height={35} alt="what'sapp" />
+            <Image src={logoPhone} width={35} height={35} alt="what'sapp" />
           </Link>
-          <Link
-            className="hover:bg-green h-9"
-            href="https://wa.me/+996500370002"
-          >
-            <Image src={logoImage} width={35} height={35} alt="what'sapp" />
-          </Link>
-          <Link
-            className="hover:bg-green h-9"
-            href="https://wa.me/+996500370002"
-          >
-            <Image src={logoImage} width={35} height={35} alt="what'sapp" />
+          <Link className="hover:bg-salesgreen h-9 rounded" href="#">
+            <Image
+              className="text-salesgreen"
+              src={logoCalendar}
+              width={35}
+              height={35}
+              alt="what'sapp"
+            />
           </Link>
         </div>
       </div>
