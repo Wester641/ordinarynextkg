@@ -13,7 +13,7 @@ export default function Header() {
     <div className="flex bg-neutral-800 sm:bg-[#fff] items-center justify-between border-b border-[#d9d9d9] py-2 ss:py-4 relative transition-transform duration-300 ease-in-out ">
       <div className="flex items-center justify-between w-full ">
         <div
-          className="HAMBURGER-ICON space-y-1 sm:space-y-2 bg-green py-3  pr-4 pl-2 rounded-r-3xl hover:bg-dark-green "
+          className="HAMBURGER-ICON space-y-1 sm:space-y-2 bg-green py-3  pr-4 pl-2 rounded-r-3xl hover:bg-dark-green cursor-pointer"
           onClick={() => setIsNavOpen((prev) => !prev)}
         >
           <span className="block h-[2px] rounded sm:h-[3px] w-4 sm:w-8  bg-[#fff]"></span>

@@ -14,7 +14,7 @@ export default function PromoSection() {
             key={el.id}
             className="border w-full  h-32 md:h-[450px] sm:h-[300px]  relative border-[#d9d9d9] cursor-pointer hover:opacity-75"
           >
-            <Link href="/">
+            <Link href={el.href}>
               <Image
                 key={el.id}
                 className="h-full w-full object-contain"
@@ -25,7 +25,6 @@ export default function PromoSection() {
               />
             </Link>
             <p className="bg-green text-[#fff]  min-h-8 sm:py-2 sm:text-base text-xs md:text-xl absolute w-full bottom-5 text-center opacity-80 ">
-              {/* {el.name} */}
               <span className="block ">{el.description}</span>
             </p>
           </div>
