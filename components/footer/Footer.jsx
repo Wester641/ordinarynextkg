@@ -15,7 +15,7 @@ export default function Footer() {
                   className="text-[0.8rem] hover:bg-green cursor-pointer"
                   key={idx}
                 >
-                  <Link href={item.path || "#"}>{el}</Link>
+                  <Link href={item.path || "/#"}>{el}</Link>
                 </li>
               ))}
             </ul>
@@ -24,12 +24,15 @@ export default function Footer() {
       </div>
       <div>
         <div className="text-center text-[0.7rem]">
-          <Link className="hover:bg-green" href="github.com/Wester641">
+          <Link className="hover:bg-green" href="https://zafarzhon.vercel.app/">
             Сайт создан на платформе Satu.kz
           </Link>
           <div>
             ТОО DMR Company - С НАМИ НАДЕЖНО город Алматы |
-            <Link className="hover:bg-green" href="github.com/Wester641">
+            <Link
+              className="hover:bg-green"
+              href="https://zafarzhon.vercel.app/"
+            >
               Пожаловаться на контент
             </Link>
           </div>

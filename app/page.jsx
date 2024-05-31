@@ -21,7 +21,6 @@ const Home = () => {
       <SimpleSlider />
       <PromoSection />
       <WhatsAppComponent />
-      {/* <ProductsCardsCustom /> */}
       <ProductCurrectData />
       <PromoBanner />
       <PromoSection2 />

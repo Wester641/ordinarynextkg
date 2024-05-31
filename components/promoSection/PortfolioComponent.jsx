@@ -13,7 +13,7 @@ export default function PromoSection2() {
             key={el.id}
             className="border w-[85%]  h-32 sm:h-[230px] md:h-[300px] relative border-[#d9d9d9] hover:opacity-75 my-7 mx-7"
           >
-            <Link href={el.href}>
+            <Link href={el.path}>
               <Image
                 key={el.id}
                 className="h-full w-full object-contain "

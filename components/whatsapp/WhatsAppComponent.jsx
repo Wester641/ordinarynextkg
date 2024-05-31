@@ -6,10 +6,25 @@ import Image from "next/image";
 
 export default function WhatsAppComponent() {
   return (
-    <div className="fixed z-50 right-[5%] rounded-full bottom-[10%] bg-[#0000007f] hover:bg-green">
-      <Link className=" cursor-pointer " href="https://wa.me/+996500370002">
-        <Image src={logoImage} width={80} height={80} alt="what'sapp" />
-      </Link>
+    <div className="fixed z-50 right-[5%] rounded-full bottom-[10%] bg-[#000000d1] hover:bg-green ">
+      <div className="relative ">
+        <Link className="  cursor-pointer  " href="https://wa.me/+996500370002">
+          <Image
+            // className="animate-ping"
+            src={logoImage}
+            width={60}
+            height={60}
+            alt="what'sapp"
+          />
+          <Image
+            className="absolute top-0"
+            src={logoImage}
+            width={60}
+            height={60}
+            alt="what'sapp"
+          />
+        </Link>
+      </div>
     </div>
   );
 }

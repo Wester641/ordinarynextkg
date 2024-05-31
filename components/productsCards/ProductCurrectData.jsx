@@ -11,7 +11,7 @@ export default function ProductCurrectData() {
       <div className="">
         <div className="grid grid-cols-2 ss:grid-cols-3 sm:grid-cols-4  gap-5 mx-3 my-3 xl:place-items-center ">
           {productsForBank.map((card) => (
-            <Link
+            <div
               className=" w-full xl:w-11/12 grid place-items-center"
               key={card.id}
               href={`/product/${card.id}`}
@@ -19,6 +19,7 @@ export default function ProductCurrectData() {
               <ProductCustom
                 image={card.images && card.images[0] ? card.images[0] : ""}
                 title={card.name}
+                href={`/product/${card.id}`}
                 completed={
                   <span
                     className={
@@ -31,7 +32,7 @@ export default function ProductCurrectData() {
                 }
                 price={card.price}
               />
-            </Link>
+            </div>
           ))}
         </div>
       </div>

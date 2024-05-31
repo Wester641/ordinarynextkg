@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export default function Button({ name, className, href = "/" }) {
+export default function Button({ name, className, href = "/#" }) {
   return (
     <div className="flex justify-center">
       <Link href="/#">
