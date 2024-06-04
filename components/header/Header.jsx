@@ -37,17 +37,15 @@ export default function Header() {
           <span className="block h-[2px] rounded sm:h-[3px] w-4 sm:w-8 bg-[#fff]"></span>
         </div>
         <div className="hidden sm:block text-black ">
-          <h3>
-            Пломбировочная и упаковочная продукции от компании ТОО DMR Company
-          </h3>
+          <h3>Пломбировочная и упаковочная продукции от компании </h3>
         </div>
-        <div className="hidden sm:block w-96">
+        {/* <div className="hidden sm:block w-96">
           <input
             className="w-full border-2 border-[#d9d9d9] text-sm py-2 px-1"
             type="text"
             placeholder="Поиск по сайту"
           />
-        </div>
+        </div> */}
         <div className="flex px-5 gap-5">
           <Link
             className="hover:bg-salesgreen h-9 rounded"
