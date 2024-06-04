@@ -8,8 +8,8 @@ function ProductIdInfo({
   desc,
 }) {
   return (
-    <div className="min-h-screen border border-[#d9d9d9] shadow-4xl w-10/12 mx-5 bg-[#f6f7fa] my-10">
-      <nav className="w-full h-[80px] flex   border-b border-b-green">
+    <div className="min-h-screen border border-[#d9d9d9] shadow-4xl xs:w-10/12 mx-5 bg-[#f6f7fa] my-10">
+      <nav className="text-[12px] xs:text-base w-full h-14 xs:h-[80px] flex   border-b border-b-green">
         <div className="border-r border-r-[#d9d9d9] w-1/3 flex justify-center items-center hover:bg-zinc-200 hover:border-t hover:border-t-green">
           <button>Описание</button>
         </div>
@@ -26,13 +26,13 @@ function ProductIdInfo({
           <span className="cursor-pointer text-salesgreen">WhatsApp</span>
         </div>
       </div>
-      <div className=" h-[300px] flex flex-col gap-2 p-5">
+      <div className=" h-[300px] flex flex-col gap-2 px-5 xs:p-5">
         <div className="text-sm">{title}</div>
-        <div className="text-2xl mb-10">{name}</div>
+        <div className="text-2xl xs:mb-10">{name}</div>
         <div className="text-sm">{desc}</div>
       </div>
-      <section className="max-w-full text-[#4d4d4d] m-5 py-10 flex flex-col gap-10">
-        <h2 className="text-center text-xl">
+      <section className="max-w-full text-[#4d4d4d] m-5 xs:py-10 flex flex-col  xs:gap-10">
+        <h2 className="text-center xs:text-xl">
           Оформить заказ пломбировочной и упаковочной продукции
         </h2>
         <div className="flex flex-col md:flex-row gap-5 items-center">

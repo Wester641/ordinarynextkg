@@ -46,16 +46,19 @@ export default function Header() {
             placeholder="Поиск по сайту"
           />
         </div> */}
-        <div className="flex px-5 gap-5">
+        <div className="flex px-5 gap-5 ">
           <Link
-            className="hover:bg-salesgreen h-9 rounded"
+            className="  hover:bg-salesgreen h-9 rounded bg-salesgreen  xs:bg-[#fff] "
             href="https://wa.me/+996500370002"
           >
             <Image src={logoPhone} width={35} height={35} alt="what'sapp" />
           </Link>
-          <Link className="hover:bg-salesgreen h-9 rounded" href="#">
+          <Link
+            className="hover:bg-salesgreen h-9 rounded bg-salesgreen  xs:bg-[#fff]"
+            href="#"
+          >
             <Image
-              className="text-salesgreen"
+              className=" text-salesgreen"
               src={logoCalendar}
               width={35}
               height={35}

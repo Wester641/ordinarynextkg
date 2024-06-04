@@ -23,10 +23,10 @@ export default function ProductDetails() {
   return (
     <section className=" min-h-screen">
       <BreadCrumbs />
-      <div className="flex h-1/2 gap-8 m-5 ">
-        <div className="w-2/5 ">
+      <div className="flex flex-wrap xs:flex-nowrap xs:h-1/2 gap-8 m-5 ">
+        <div className=" w-full xs:w-2/5 ">
           <div className="border border-[#d9d9d9] ">
-            <div className="w-full h-[350px] flex items-center justify-center">
+            <div className="xs:w-full h-[350px] flex items-center justify-center">
               <Image
                 className="h-[300px] object-contain"
                 src={product.images[0]}
@@ -36,7 +36,7 @@ export default function ProductDetails() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-3/5 gap-5 border border-[#d9d9d9] p-5">
+        <div className="flex flex-col w-full xs:w-3/5 gap-5 border border-[#d9d9d9] p-5">
           <h1 className="text-xl font-bold">{product.name}</h1>
           {
             <span
