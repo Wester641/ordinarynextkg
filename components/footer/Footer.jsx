@@ -25,10 +25,10 @@ export default function Footer() {
       <div>
         <div className="text-center text-[0.7rem]">
           <Link className="hover:bg-green" href="https://zafarzhon.vercel.app/">
-            Сайт создан на платформе Satu.kz
+            Сайт создан на платформе Vercel.app
           </Link>
           <div>
-            ТОО DMR Company - С НАМИ НАДЕЖНО город Алматы |
+            Company - С НАМИ НАДЕЖНО город Бишкек |
             <Link
               className="hover:bg-green"
               href="https://zafarzhon.vercel.app/"

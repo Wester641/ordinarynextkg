@@ -23,7 +23,6 @@ const Home = () => {
       <WhatsAppComponent />
       <ProductCurrectData />
       <PromoBanner />
-      <PromoSection2 />
       <Descriptions />
       <Descriptions2 />
       <Descriptions3 />

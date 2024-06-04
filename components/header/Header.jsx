@@ -1,8 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { navigation, userNavigation } from "../../lib/constans/navigationData";
-import logoImage from "../../public/Img/icon/ContactsWhatsApp.svg";
 import logoPhone from "../../public/Img/icon/telephone-call.png";
 import logoCalendar from "../../public/Img/icon/schedule.png";
 import Image from "next/image";
@@ -11,16 +10,31 @@ import Link from "next/link";
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  useEffect(() => {
+    if (isNavOpen) {
+      const links = document.querySelectorAll(".menu-link");
+      const handleClick = () => setIsNavOpen(false);
+      links.forEach((link) => {
+        link.addEventListener("click", handleClick);
+      });
+      return () => {
+        links.forEach((link) => {
+          link.removeEventListener("click", handleClick);
+        });
+      };
+    }
+  }, [isNavOpen]);
+
   return (
     <div className="flex bg-neutral-800 sm:bg-[#fff] items-center justify-between border-b border-[#d9d9d9] py-2 ss:py-4 relative transition-transform duration-300 ease-in-out ">
       <div className="flex items-center justify-between w-full ">
         <div
-          className="HAMBURGER-ICON space-y-1 sm:space-y-2 bg-green py-3  pr-4 pl-2 rounded-r-3xl hover:bg-dark-green cursor-pointer"
+          className="HAMBURGER-ICON space-y-1 sm:space-y-2 bg-green py-3 pr-4 pl-2 rounded-r-3xl hover:bg-dark-green cursor-pointer"
           onClick={() => setIsNavOpen((prev) => !prev)}
         >
-          <span className="block h-[2px] rounded sm:h-[3px] w-4 sm:w-8  bg-[#fff]"></span>
-          <span className="block h-[2px] rounded sm:h-[3px] w-4 sm:w-8  bg-[#fff]"></span>
-          <span className="block h-[2px] rounded sm:h-[3px] w-4 sm:w-8  bg-[#fff]"></span>
+          <span className="block h-[2px] rounded sm:h-[3px] w-4 sm:w-8 bg-[#fff]"></span>
+          <span className="block h-[2px] rounded sm:h-[3px] w-4 sm:w-8 bg-[#fff]"></span>
+          <span className="block h-[2px] rounded sm:h-[3px] w-4 sm:w-8 bg-[#fff]"></span>
         </div>
         <div className="hidden sm:block text-black ">
           <h3>
@@ -72,7 +86,7 @@ export default function Header() {
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <div className=" w-full">
+            <div className="w-full">
               <div className="bg-green text-[#fff] text-center text-lg py-2">
                 <h3>Меню</h3>
               </div>
@@ -81,8 +95,8 @@ export default function Header() {
                   key={item.id}
                   className="MENU-LINK-MOBILE-OPEN z-9999 flex flex-col items-start p-3 justify-between border-b border-[#252525] text-sm sm:text-base"
                 >
-                  <li className=" border-gray-400 hover:text-green ">
-                    <Link className="" href={item.href}>
+                  <li className="border-gray-400 hover:text-green">
+                    <Link className="menu-link" href={item.href}>
                       {item.name}
                     </Link>
                   </li>
@@ -112,7 +126,10 @@ export default function Header() {
                     {item.address && <p>{item.address}</p>}
                     {item.email && <p>{item.email}</p>}
                     {item.href && (
-                      <Link className="text-blue-500" href={item.href}>
+                      <Link
+                        className="menu-link text-blue-500"
+                        href={item.href}
+                      >
                         {item.name}
                       </Link>
                     )}
@@ -149,7 +166,6 @@ export default function Header() {
           .showMenuNav {
             width: 300px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-
           }
         }
         @media (max-width: 768px) {

@@ -6,12 +6,19 @@ import imageCarousel3 from "../../public/Img/ForCarousel/ForCarouse3.png";
 import imageCarousel4 from "../../public/Img/ForCarousel/ForCarousel4.png";
 import imageCarousel5 from "../../public/Img/ForCarousel/ForCarousel5.png";
 import imageCarousel6 from "../../public/Img/ForCarousel/ForCarousel6.png";
+import imageCarousel7 from "../../public/Img/ForCarousel/landscape.jpg";
+import imageCarousel8 from "../../public/Img/ForCarousel/autumn.jpg";
+import imageCarousel9 from "../../public/Img/ForCarousel/banner.jpg";
+import imageCarousel10 from "../../public/Img/ForCarousel/emotions.jpg";
+import imageCarousel11 from "../../public/Img/ForCarousel/1812.jpg";
 import Image from "next/image";
 
 const carouselArray = [
-  imageCarousel1,
-  imageCarousel2,
-  imageCarousel3,
+  imageCarousel8,
+  imageCarousel7,
+  imageCarousel9,
+  imageCarousel10,
+  imageCarousel11,
   imageCarousel4,
   imageCarousel5,
   imageCarousel6,
@@ -43,41 +50,34 @@ const Slider = () => {
         className="relative h-28 ss:h-56 w-full shadow-md
  md:h-96 overflow-hidden "
       >
-        <div className="flex w-full h-full">
+        <div
+          className="flex w-full h-full transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
           {carouselArray.map((image, index) => (
-            <div
-              key={index}
-              className={`w-full h-full absolute top-0 left-0 transform ${
-                index === currentIndex
-                  ? "translate-x-0"
-                  : index < currentIndex
-                  ? "translate-x-full"
-                  : "-translate-x-full"
-              } transition-transform duration-500 ease-in-out`}
-            >
+            <div key={index} className="w-full h-full flex-shrink-0">
               <Image
                 src={image}
                 alt={`Slide ${index}`}
-                className="w-full h-full  md:object-cover "
+                className="w-full h-full md:object-cover"
               />
             </div>
           ))}
-          <button
-            className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black sm:bg-opacity-50 bg-opacity-20 text-white sm:px-4 sm:py-2 px-2 py-1 rounded-l-md z-1 "
-            onClick={nextSlide}
-          >
-            &lt;
-          </button>
-          <button
-            className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black sm:bg-opacity-50 bg-opacity-20 text-white sm:px-4 sm:py-2 px-2 py-1 rounded-r-md z-1"
-            onClick={prevSlide}
-          >
-            &gt;
-          </button>
         </div>
+        <button
+          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black sm:bg-opacity-50 bg-opacity-20 text-white sm:px-4 sm:py-2 px-2 py-1 rounded-l-md z-10"
+          onClick={prevSlide}
+        >
+          &lt;
+        </button>
+        <button
+          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black sm:bg-opacity-50 bg-opacity-20 text-white sm:px-4 sm:py-2 px-2 py-1 rounded-r-md z-10"
+          onClick={nextSlide}
+        >
+          &gt;
+        </button>
       </div>
     </section>
   );
 };
-
 export default Slider;
