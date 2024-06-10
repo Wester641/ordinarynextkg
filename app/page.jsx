@@ -1,7 +1,6 @@
 "use client";
 import SimpleSlider from "../components/simpleslider/SimpleSlider";
 
-import NavbarSection from "../components/header/navbar/NavbarSection";
 import PromoBanner from "../components/promoSection/PromoBanner";
 import PromoSection2 from "../components/promoSection/PromoSection2";
 import Descriptions from "../components/descriptions/Descriptions";

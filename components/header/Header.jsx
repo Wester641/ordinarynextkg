@@ -71,7 +71,7 @@ export default function Header() {
         <section className="MOBILE-MENU z-9999 flex ">
           <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
             <div
-              className="CROSS-ICON absolute top-0 right-0 px-2 py-2"
+              className="CROSS-ICON absolute top-0 right-0 px-2 py-2 cursor-pointer"
               onClick={() => setIsNavOpen(false)}
             >
               <svg
