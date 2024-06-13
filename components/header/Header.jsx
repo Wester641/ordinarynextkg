@@ -2,10 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { navigation, userNavigation } from "../../lib/constans/navigationData";
-import logoPhone from "../../public/Img/icon/telephone-call.png";
-import logoCalendar from "../../public/Img/icon/schedule.png";
-import Image from "next/image";
 import Link from "next/link";
+import MenuBarDemo from "../shadcn/MenuBarDemo";
+import DialogDemo from "../shadcn/DialogDemo";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -39,32 +38,9 @@ export default function Header() {
         <div className="hidden sm:block text-black ">
           <h3>Пломбировочная и упаковочная продукции от компании </h3>
         </div>
-        {/* <div className="hidden sm:block w-96">
-          <input
-            className="w-full border-2 border-[#d9d9d9] text-sm py-2 px-1"
-            type="text"
-            placeholder="Поиск по сайту"
-          />
-        </div> */}
-        <div className="flex px-5 gap-5 ">
-          <Link
-            className="  hover:bg-salesgreen h-9 rounded bg-salesgreen  xs:bg-[#fff] "
-            href="https://wa.me/+996500370002"
-          >
-            <Image src={logoPhone} width={35} height={35} alt="what'sapp" />
-          </Link>
-          <Link
-            className="hover:bg-salesgreen h-9 rounded bg-salesgreen  xs:bg-[#fff]"
-            href="#"
-          >
-            <Image
-              className=" text-salesgreen"
-              src={logoCalendar}
-              width={35}
-              height={35}
-              alt="what'sapp"
-            />
-          </Link>
+        <div className="flex px-5 gap-2 items-center">
+          <MenuBarDemo />
+          <DialogDemo />
         </div>
       </div>
       <nav>
@@ -142,6 +118,7 @@ export default function Header() {
               </div>
             </div>
           </div>
+          {/* <NavbarPop /> */}
         </section>
       </nav>
       <style>{`

@@ -29,7 +29,7 @@ module.exports = {
         bgftr: "rgb(50, 50, 50)",
         textwhite: "rgb(255, 255, 255);",
         temnogreen: "#1f2e4d",
-        salesgreen: "#2d4156",
+        salesgreen: "rgb(101,193,46)",
         green: "#1f2e4d",
         // green: "#B233FF",
         "dark-green": "#215713",
