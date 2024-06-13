@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import aboutBanner from "../../public/Img/ForCarousel/ForCarouse3.png";
-import Button from "../ui/Button";
+import Button from "../buttons/ButtonCustom";
 
 export default function AboutComponent({
   className,

@@ -1,7 +1,7 @@
 import React from "react";
 import { Descriptions1 } from "../../lib/constans/descriptions";
 import SectionDesc from "./SectionDesc";
-import Button from "../ui/Button";
+import Button from "../buttons/ButtonCustom";
 
 export default function Descriptions() {
   return (

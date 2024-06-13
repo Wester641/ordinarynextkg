@@ -1,6 +1,6 @@
 import React from "react";
 import { DescMapsAndIcons } from "../../lib/constans/descriptions";
-import Button from "../ui/Button";
+import Button from "../buttons/ButtonCustom";
 import Image from "next/image";
 
 export default function DescMaps() {

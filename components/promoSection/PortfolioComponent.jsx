@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { callouts } from "../../lib/constans/promoSection";
-import Button from "../ui/Button";
+import Button from "../buttons/ButtonCustom";
 import Link from "next/link";
 
 export default function PromoSection2() {

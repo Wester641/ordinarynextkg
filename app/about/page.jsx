@@ -6,9 +6,9 @@ import aboutBanner from "../../public/Img/ForCarousel/ForCarouse3.png";
 import bluePlombs from "../../public/Img/blueplombs.jpeg";
 import AboutComponentDesc from "@/components/about/AboutComponentDesc";
 import moneyPocket from "../../public/1123123.png";
-import Button from "@/components/ui/Button";
 import AboutComponentDesc1 from "@/components/about/AboutComponentDesc1";
 import AboutComponentDesc2 from "@/components/about/AboutComponentDesc2";
+import ButtonCustom from "@/components/buttons/ButtonCustom";
 
 const About = () => {
   return (
@@ -49,7 +49,7 @@ const About = () => {
         className="flex sm:flex-row-reverse flex-col text-end justify-between items-center sm:h-[200px]  mx-3 p-3 text-white bg-green "
         image={moneyPocket}
       />
-      <Button
+      <ButtonCustom
         className={
           "text-base rounded py-2 px-10 text-green font-bold border border-green hover:bg-green hover:text-[#fff] my-3"
         }
@@ -127,7 +127,7 @@ const About = () => {
           hic ut ea laborum voluptas eius? Explicabo tempora veniam architecto
           qui.
         </p>
-        <Button
+        <ButtonCustom
           name={"Наши контакты"}
           className={
             "text-base rounded py-2 px-10 text-green font-bold border border-green hover:bg-green hover:text-[#fff] my-3"
@@ -155,7 +155,7 @@ const About = () => {
           number={"04"}
         />
       </div>
-      <Button
+      <ButtonCustom
         name={"Доставка и оплата"}
         className={
           "text-base rounded py-2 px-10 text-green font-bold border border-green hover:bg-green hover:text-[#fff] my-3"

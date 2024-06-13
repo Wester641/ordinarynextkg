@@ -5,7 +5,7 @@ import { productsForBank } from "../../../lib/constans/productsForBank";
 import { useParams } from "next/navigation";
 import { Link } from "lucide-react";
 import Image from "next/image";
-import Button from "@/components/ui/Button";
+import Button from "@/components/buttons/ButtonCustom";
 import ProductIdInfo from "@/components/productsCards/productIdInfo/ProductIdInfo";
 
 export default function ProductDetails() {
