@@ -6,6 +6,13 @@ import Promosale from "@/components/header/promoSale/Promosale";
 import NavbarSection from "@/components/header/navbar/CustomNavbar";
 import WhatsAppComponent2 from "@/components/whatsapp/WhatsAppComponent2";
 import BreadCrumbs from "@/components/featers/breadCrumbs/BreadCrumbs";
+// import type { Metadata } from "next";
+
+export const metadata = {
+  title: "OrdinaryKG",
+  description: "С нами надёжно",
+
+};
 
 export default function RootLayout({ children }) {
   return (
