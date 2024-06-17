@@ -78,20 +78,6 @@ export default function Delivery() {
               </li>
             </ul>
           ))}
-          {samoDelivery.map((item) => (
-            <ul key={item.id}>
-              <li className="sm:font-semibold  sm:mx-5 my-4">{item.title}</li>
-              <li className="sm:mx-10 my-4">
-                <ul>
-                  {item.desc.map((descItem, index) => (
-                    <li className="my-2" key={index}>
-                      {descItem}
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            </ul>
-          ))}
           {paymentMethods.map((item) => (
             <ul key={item.id}>
               <li className="sm:mx-5  font-semibold my-2">{item.title}</li>

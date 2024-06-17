@@ -23,7 +23,9 @@ export default function ProductCurrectData() {
                 completed={
                   <span
                     className={
-                      card.completed ? "text-salesgreen" : "text-red-500"
+                      card.completed
+                        ? "text-salesgreen text-sm"
+                        : "text-red-500 text-sm"
                     }
                   >
                     {" "}

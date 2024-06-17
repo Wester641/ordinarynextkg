@@ -10,14 +10,13 @@ import {
 import Image from "next/image";
 import React from "react";
 import logoPhone from "@/public/Img/icon/telephone-call.png";
-import logoCalendar from "@/public/Img/icon/schedule.png";
 import Link from "next/link";
 
 function MenuBarDemo() {
   return (
     <Menubar>
       <MenubarMenu>
-        <MenubarTrigger className=" cursor-pointer">
+        <MenubarTrigger className="cursor-pointer gap-2 hover:text-green">
           <Image
             className=" text-salesgreen hover:opacity-70 rounded"
             src={logoPhone}
@@ -25,6 +24,7 @@ function MenuBarDemo() {
             height={35}
             alt="what'sapp"
           />
+          <span className="w-20 text-start">Номера телефонов</span>
         </MenubarTrigger>
         <MenubarContent>
           <MenubarItem className="flex flex-col items-start text-[#333]">

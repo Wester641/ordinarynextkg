@@ -38,7 +38,7 @@ export default function Header() {
         <div className="hidden sm:block text-black ">
           <h3>Пломбировочная и упаковочная продукции от компании </h3>
         </div>
-        <div className="flex px-5 gap-2 items-center">
+        <div className="flex pr-10 gap-3 items-center">
           <MenuBarDemo />
           <DialogDemo />
         </div>

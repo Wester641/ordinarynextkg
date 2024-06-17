@@ -13,7 +13,7 @@ import TableDemo from "./TableDemo";
 function DialogDemo() {
   return (
     <Dialog>
-      <DialogTrigger>
+      <DialogTrigger className="flex items-center gap-2 hover:text-green">
         <Image
           className="hover:opacity-70"
           src={logoCalendar}
@@ -21,6 +21,7 @@ function DialogDemo() {
           height={35}
           alt="what'sapp"
         />
+        <span className="w-20 text-sm text-start">График работы</span>
       </DialogTrigger>
       <DialogContent className="">
         <DialogHeader className="p-6">
