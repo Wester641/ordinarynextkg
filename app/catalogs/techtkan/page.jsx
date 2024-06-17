@@ -1,15 +1,29 @@
 "use client";
+import React, { useEffect } from "react";
+import { productsForBank } from "../../../lib/constans/productsForBank";
+import ProductCustom from "@/components/productsCards/ProductCustom";
 
-import React from "react";
-import ProductCustom from "./ProductCustom";
-import { productsForBank } from "../../lib/constans/productsForBank";
+export default function Techtkan() {
+  const indicesToSelect = [1, 7, 8, 9, 10];
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const product = [];
 
-export default function ProductCurrectData() {
+  indicesToSelect.forEach((index) => {
+    if (productsForBank[index] !== undefined) {
+      product.push(productsForBank[index]);
+    }
+  });
+  useEffect(() => {
+    document.title = "Технические ткани";
+  }, [product]);
   return (
     <>
-      <div className="">
+      <div className="my-10">
+        <h2 className="text-center text-xl font-semibold my-10">
+          Технические ткани
+        </h2>
         <div className="grid grid-cols-2 ss:grid-cols-3 sm:grid-cols-4  gap-5 mx-3 my-3 xl:place-items-center ">
-          {productsForBank.map((card) => (
+          {product.map((card) => (
             <div
               className=" w-full xl:w-11/12 grid place-items-center"
               key={card.id}

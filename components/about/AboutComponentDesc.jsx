@@ -9,6 +9,7 @@ export default function AboutComponentDesc({
   title = "Упаковочные материалы. ",
   className = "flex flex-col md:flex-row text-start justify-between items-center sm:h-[200px]  mx-3 p-3 bg-[#ececec] gap-3",
   classNameBorder = "border border-[#fff]",
+  href = "/catalogs",
 }) {
   return (
     <section className={className}>
@@ -16,7 +17,7 @@ export default function AboutComponentDesc({
         <Image src={image} alt="money" width={170} />
       </div>
       <div className="flex flex-col justify-center gap-3">
-        <Link href={"/"}>
+        <Link href={href}>
           <h1 className="block text-xl hover:opacity-50">{title}</h1>
         </Link>
         <div className={classNameBorder}>{border}</div>

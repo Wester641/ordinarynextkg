@@ -24,8 +24,12 @@ const dropDownNavbar = [
     name: "Материалы для пломбирования",
     path: "/catalogs/materialforplomb",
   },
-  { id: 5, name: "Технические ткани", path: "/catalogs/sales" },
-  { id: 6, name: "Мешковина, упаковочная ткань", path: "/catalogs/sales" },
+  { id: 5, name: "Технические ткани", path: "/catalogs/techtkan" },
+  {
+    id: 6,
+    name: "Мешковина, упаковочная ткань",
+    path: "/catalogs/meshoktechtkan",
+  },
 ];
 export default function DropDown() {
   return (

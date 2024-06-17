@@ -8,8 +8,7 @@ export default function Descriptions2() {
     <section className="max-w-full text-[#4d4d4d] shadow-4xl  m-5 py-5 md:pr-3 flex flex-col gap-10">
       <div>
         <h2 className="text-xl text-center my-5">
-          Лучшие условия для оптово-розничных покупок в интернет-магазине DMR
-          Company.
+          Лучшие условия для оптово-розничных покупок в интернет-магазине
         </h2>
         {Descriptions22.map((el) => (
           <div

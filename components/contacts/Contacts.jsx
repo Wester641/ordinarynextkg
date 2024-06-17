@@ -8,12 +8,13 @@ export default function Contacts() {
         <div className="flex  gap-[150px] ">
           <span className="w-1/6">Название:</span>
           <span className="w-4/5">
-            ТОО DMR Company - С НАМИ НАДЕЖНО город Алматы{" "}
+            Индивидуальный предприниматель Жунушалиева Динара - С НАМИ НАДЕЖНО
+            город Бишкек{" "}
           </span>
         </div>
         <div className="flex gap-[150px] ">
           <span className="w-1/6">Контактное лицо:</span>
-          <span className="w-4/5">Алимбетова Гульсайран</span>
+          <span className="w-4/5">Жунушалиева Динара</span>
         </div>
         <div className="flex gap-[150px] ">
           <span className="w-1/6">Сайт компании:</span>
@@ -23,25 +24,20 @@ export default function Contacts() {
         </div>
         <div className="flex gap-[150px] ">
           <span className="w-1/6">Адрес:</span>
-          <span className="w-4/5">
-            ул Гоголя 86 офис 218 уг. Наурызбай Батыра, бизнес центр Казжол
-            (высотное здание), главный вход со стороны Гоголя и дополнительный
-            вход со стороны Наурызбай Батыра (первый поворот налево - шлагбаум),
-            Алматы, Казахстан{" "}
-          </span>
+          <span className="w-4/5">г. Бишкек, ул. Мусы Жалиля 223</span>
         </div>
         <div className="flex gap-[150px] ">
           <span className="w-1/6">Телефон:</span>
           <div className="w-4/5">
-            <span>+7 (707) 777-41-97Для заказа </span>
-            <span>+7 (701) 777-41-97Для заказа, WhatsApp</span>
-            <span>+7 (747) 565-49-93Для заказа, WhatsApp</span>
+            <span>тел. 0555 53 54 55 заказа </span>
+            <span>тел. 0555 53 54 55 заказа, WhatsApp</span>
+            {/* <span>+7 (747) 565-49-93Для заказа, WhatsApp</span> */}
           </div>
         </div>
         <div className="flex gap-[150px]">
           <span className="w-1/6">Email:</span>
           <span className=" text-salesgreen cursor-pointer w-4/5">
-            ordinarynextkg.vercel.app
+            d.zhunushalieva@mail.ru
           </span>
         </div>
         <div className="flex gap-[150px]">

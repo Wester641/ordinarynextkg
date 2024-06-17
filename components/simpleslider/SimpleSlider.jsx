@@ -29,16 +29,16 @@ const carouselArray = [
 function SimpleSlider() {
   return (
     <Carousel
-      className="h-96"
+      className="my-10 h-96"
       showThumbs={false}
       infiniteLoop
       autoPlay
       interval={10000}
     >
       {carouselArray.map((image, index) => (
-        <div className="border h-96" key={index}>
+        <div className="h-96" key={index}>
           <Image
-            className=" object-cover"
+            className="object-contain"
             src={image}
             alt={`Slide ${index}`}
             layout="fill"

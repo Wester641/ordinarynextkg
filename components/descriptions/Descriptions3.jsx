@@ -6,7 +6,7 @@ export default function Descriptions3() {
   return (
     <section className="max-w-full text-[#4d4d4d] shadow-4xl mx-5 mb-10 py-5 md:pr-3 flex flex-col gap-5">
       <h2 className="text-center text-xl">
-        Почему клиенты выбирают « DMR Company»
+        Почему клиенты выбирают нашу компанию»
       </h2>
       <div className="md:grid md:grid-cols-2 gap-5 items-center px-3 ">
         {Descriptions33.map((el) => (
