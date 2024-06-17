@@ -9,8 +9,8 @@ const containerStyle = {
 };
 
 const defaultCenter = {
-  lat: 40.712776,
-  lng: -74.005974,
+  lat: 42.886507,
+  lng: 74.634774,
 };
 
 function MyMapComponent() {
@@ -19,8 +19,7 @@ function MyMapComponent() {
       <div className="flex flex-col gap-5">
         <h1 className="text-center text-3xl ">Местоположение компании</h1>
         <p className="text-sm text-start my-3">
-          г. Алматы ул Гоголя 86 пересечение улицы Наурызбай Батыра (бывшая
-          улица Дзержинского) офис 218, Бизнес центр Казжол.
+          г. Бишкек, ул. Мусы Жалиля 223
         </p>
       </div>
       <LoadScript googleMapsApiKey="AIzaSyDMUn92YClkwFuvQJ1STWCKez-P0tq8UGM">

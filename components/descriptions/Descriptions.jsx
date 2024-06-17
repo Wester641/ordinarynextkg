@@ -16,7 +16,7 @@ export default function Descriptions() {
           </div>
         ))}
       </div>
-      <Button name="Увидеть ассортимент" />
+      <Button name="Увидеть ассортимент" href={"/catalogs"} />
     </section>
   );
 }

@@ -6,10 +6,10 @@ import Image from "next/image";
 export default function DescMaps() {
   return (
     <>
-      <Button
+      {/* <Button
         name="Больше комментариев"
         className="text-base rounded py-3 px-11 text-green font-bold border border-green hover:bg-green hover:text-[#fff] mt-10 "
-      />
+      /> */}
       <section className="max-w-full text-[#4d4d4d] shadow-4xl  m-5 py-10 flex flex-col gap-10">
         <h2 className="text-center text-xl">
           Оформить заказ пломбировочной и упаковочной продукции

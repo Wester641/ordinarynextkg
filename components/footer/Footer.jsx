@@ -10,13 +10,12 @@ export default function Footer() {
           <div key={item.id}>
             <p className="bold text-base pb-2">{item.title}</p>
             <ul className="flex flex-col gap-1">
-              {item.categories.map((el, idx) => (
-                <li
-                  className="text-[0.8rem] hover:bg-green cursor-pointer"
-                  key={idx}
-                >
-                  <Link href={item.path || "/#"}>{el}</Link>
-                </li>
+              {item.categories.map((el) => (
+                <Link key={el.id} href={el.path}>
+                  <li className="text-[0.8rem] hover:bg-green cursor-pointer">
+                    {el.title}
+                  </li>
+                </Link>
               ))}
             </ul>
           </div>
@@ -28,7 +27,7 @@ export default function Footer() {
             Сайт создан на платформе Vercel.app
           </Link>
           <div>
-            Company - С НАМИ НАДЕЖНО город Бишкек |
+            С НАМИ НАДЕЖНО город Бишкек |{" "}
             <Link
               className="hover:bg-green"
               href="https://zafarzhon.vercel.app/"

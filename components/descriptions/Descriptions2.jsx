@@ -24,7 +24,7 @@ export default function Descriptions2() {
           </div>
         ))}
       </div>
-      <Button name="К оформлению заказа" />
+      <Button name="К оформлению заказа" href={"/whatsapp"} />
     </section>
   );
 }

@@ -4,7 +4,7 @@ import SectionDesc from "./SectionDesc";
 
 export default function Descriptions3() {
   return (
-    <section className="max-w-full text-[#4d4d4d] shadow-4xl mx-5 mb-10 py-5 md:pr-3 flex flex-col gap-5">
+    <section className="max-w-full text-[#4d4d4d] shadow-4xl mx-5 py-5 md:pr-3 flex flex-col gap-5">
       <h2 className="text-center text-xl">
         Почему клиенты выбирают нашу компанию»
       </h2>

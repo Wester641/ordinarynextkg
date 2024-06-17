@@ -30,7 +30,7 @@ export default function PromoSection2() {
           </div>
         ))}
       </div>
-      <Button name="Посмотреть все работы" />
+      {/* <Button name="Посмотреть все работы" /> */}
     </section>
   );
 }

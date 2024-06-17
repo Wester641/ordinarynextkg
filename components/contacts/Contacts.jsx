@@ -3,7 +3,7 @@ import Button from "../buttons/ButtonCustom";
 
 export default function Contacts() {
   return (
-    <section className="">
+    <section className="my-10">
       <div className="flex flex-col mx-5 text-start text-sm gap-5">
         <div className="flex  gap-[150px] ">
           <span className="w-1/6">Название:</span>
@@ -47,10 +47,10 @@ export default function Contacts() {
           </span>
         </div>
         <button
-          href="https://wa.me/+996500370002"
+          href="https://go.2gis.com/hz0sz"
           className=" w-fit border border-green text-white bg-green hover:bg-[#fff] hover:text-green rounded px-4 py-2 my-5"
         >
-          График работы
+          Маршрут 2ГИС
         </button>
       </div>
     </section>
